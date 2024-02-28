@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+  app2:
+    image: 2048-game-app1
+    ports:
+      - "8081:8080"    
